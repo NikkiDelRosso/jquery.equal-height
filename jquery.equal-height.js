@@ -24,7 +24,9 @@ jQuery.fn.equalHeight = function() {
 		for (t in elems) {
 			var mh = elems[t].maxHeight;
 			for (i in elems[t].e) {
-				elems[t].e[i].height(mh);
+				var e = elems[t].e[i];
+				var padding = e.outerHeight() - e.height();
+				e.height(mh - padding);
 			}
 		}
 	}
