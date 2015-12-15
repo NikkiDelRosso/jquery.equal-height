@@ -33,7 +33,7 @@ jQuery.fn.equalHeight = function() {
 				e.height(mh - padding);
 			}
 		}
-	}
+	};
 
 	setHeights();
 	setTimeout(setHeights, 100); // Set heights after page elements have rendered, is there a more elegant way to do this?
