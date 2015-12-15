@@ -1,3 +1,7 @@
+if (typeof jQuery === 'undefined') {
+  throw new Error('The jQuery equal height extension requires jQuery!');
+}
+
 jQuery.fn.equalHeight = function() {
 
 	var $ = jQuery;
@@ -21,9 +25,9 @@ jQuery.fn.equalHeight = function() {
 		});
 
 		// Apply the max height to all elements in each offset class
-		for (t in elems) {
+		for (var t in elems) {
 			var mh = elems[t].maxHeight;
-			for (i in elems[t].e) {
+			for (var i in elems[t].e) {
 				var e = elems[t].e[i];
 				var padding = e.outerHeight() - e.height();
 				e.height(mh - padding);
@@ -34,4 +38,4 @@ jQuery.fn.equalHeight = function() {
 	setHeights();
 	setTimeout(setHeights, 100); // Set heights after page elements have rendered, is there a more elegant way to do this?
 	$(window).resize(setHeights);
-}
+};
