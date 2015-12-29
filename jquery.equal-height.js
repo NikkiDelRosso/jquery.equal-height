@@ -36,6 +36,6 @@ jQuery.fn.equalHeight = function() {
 	};
 
 	setHeights();
-	setTimeout(setHeights, 100); // Set heights after page elements have rendered, is there a more elegant way to do this?
 	$(window).resize(setHeights);
+	$(this).find('img').load(setHeights);
 };
