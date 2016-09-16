@@ -3,8 +3,7 @@
  * Copyright 2015-2016 Nikki DelRosso
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
- 
- if (typeof jQuery === 'undefined') {
+if (typeof jQuery === 'undefined') {
   throw new Error('The jQuery equal height extension requires jQuery!');
 }
 
