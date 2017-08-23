@@ -1,5 +1,5 @@
 /*!
- * jQuery Equal Height v0.0.2 (https://github.com/Nikker/jquery.equal-height)
+ * jQuery Equal Height v0.4.1 (https://github.com/Nikker/jquery.equal-height)
  * Copyright 2015-2016 Nikki DelRosso
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
