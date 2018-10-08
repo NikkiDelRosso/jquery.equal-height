@@ -41,7 +41,7 @@ jQuery.fn.equalHeight = function() {
 	};
 
 	
-	let images = $(this).find('img');
+	var images = $(this).find('img');
 	
 	setHeights();
 	$(window).resize(setHeights);
