@@ -1,5 +1,5 @@
 /*!
- * jQuery Equal Height v0.4.1 (https://github.com/NikkiDelRosso/jquery.equal-height)
+ * jQuery Equal Height v0.4.2 (https://github.com/NikkiDelRosso/jquery.equal-height)
  * Copyright 2015-2016 Nikki DelRosso
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
@@ -40,8 +40,13 @@ jQuery.fn.equalHeight = function() {
 		}
 	};
 
+	
+	let images = $(this).find('img');
+	
 	setHeights();
 	$(window).resize(setHeights);
-	$(this).find('img').load(setHeights);
+	if (images.length > 0) {
+		images.load(setHeights);
+	}
 	$(window).bind('load', setHeights);
 };
