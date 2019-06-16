@@ -1,6 +1,6 @@
 /*!
  * jQuery Equal Height v0.4.2 (https://github.com/NikkiDelRosso/jquery.equal-height)
- * Copyright 2015-2016 Nikki DelRosso
+ * Copyright 2015-2019 Nikki DelRosso
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 if (typeof jQuery === 'undefined') {
