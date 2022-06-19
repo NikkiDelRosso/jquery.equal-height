@@ -1,3 +1,10 @@
+# Archived!
+
+In modern web development, we have CSS grid _and_ flexbox. If you need equal height containers, use one of those!
+
+* Learn more about [CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+* Learn more about [CSS Flexible Box Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)
+
 # jQuery Equal Heights
 Sets elements which start at the same vertical position to have the same height.
 
